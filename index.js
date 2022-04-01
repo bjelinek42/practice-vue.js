@@ -5,7 +5,8 @@ var App = {
     return {
       message: "Hello from JavaScript!",
       name: "Peter",
-      city: "colorado springs"
+      city: "colorado springs",
+      instrument: "guitar"
     };
   },
   methods: {

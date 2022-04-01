@@ -16,8 +16,10 @@
     {{ city }}
     <p><button v-on:click="doThis">Do Something</button></p>
     <hr>
-    <button v-on:click="changeName">Click me!</button>
+    <p>The Instrument: {{ instrument }}</p>
+    <p1>Favorite Instrument: <input type="text" v-model="instrument"></p1>
 
+    <button v-on:click="changeName">Click me!</button>
   </div>
 </body>
 
