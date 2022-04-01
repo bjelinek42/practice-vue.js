@@ -6,7 +6,10 @@ var App = {
       message: "Hello from JavaScript!",
       name: "Peter",
       city: "colorado springs",
-      instrument: "guitar"
+      instrument: "guitar",
+      fruits: ["apple", "banana", "raspberry"],
+      newFruit: "",
+      showInfo: false
     };
   },
   methods: {
@@ -16,6 +19,13 @@ var App = {
     changeName: function() {
       console.log('changing the name');
       this.name = "Jessica";
+    },
+    addFruit: function() {
+      console.log("hello");
+      this.fruits.push(this.newFruit);
+    },
+    toggleInfo: function() {
+      this.showInfo = !this.showInfo;
     }
   }
 };

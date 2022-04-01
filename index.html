@@ -17,9 +17,21 @@
     <p><button v-on:click="doThis">Do Something</button></p>
     <hr>
     <p>The Instrument: {{ instrument }}</p>
-    <p1>Favorite Instrument: <input type="text" v-model="instrument"></p1>
+    <p>Favorite Instrument: <input type="text" v-model="instrument"></p>
 
     <button v-on:click="changeName">Click me!</button>
+    <hr>
+    <hr>
+    <div v-for="fruit in fruits">
+      {{ fruit }}</div>
+    <input type="text" v-model="newFruit"> <button v-on:click="addFruit"></button>Add fruit</button>
+    <hr>
+    <hr>
+    <div>
+      <p v-if="showInfo">Extra Information</p>
+      <button v-on:click="toggleInfo">Toggle Extra Info</button>
+    </div>
+
   </div>
 </body>
 
