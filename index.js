@@ -4,28 +4,26 @@ var App = {
   data: function() {
     return {
       message: "Hello from JavaScript!",
-      name: "Peter",
-      city: "colorado springs",
-      instrument: "guitar",
+      name: "Brian",
+      city: "san francisco",
+      instrument: "",
       fruits: ["apple", "banana", "raspberry"],
-      newFruit: "",
-      showInfo: false
+      newFruit: ""
     };
   },
   methods: {
     doThis: function() {
-      console.log("this is text");
+      console.log('doing a thing...');
     },
     changeName: function() {
       console.log('changing the name');
       this.name = "Jessica";
     },
     addFruit: function() {
-      console.log("hello");
+      console.log('adding fruit');
+      console.log(this.newFruit);
+      console.log(this.fruits);
       this.fruits.push(this.newFruit);
-    },
-    toggleInfo: function() {
-      this.showInfo = !this.showInfo;
     }
   }
 };

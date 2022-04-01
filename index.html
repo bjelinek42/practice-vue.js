@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Practice Vue.js</title>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="index.js" defer></script>
@@ -11,26 +11,27 @@
 <body>
   <h1>Hello from HTML!</h1>
   <div id="app">
-    {{ message }}
-    {{ name }}
-    {{ city }}
-    <p><button v-on:click="doThis">Do Something</button></p>
+    <h1>{{ message }}</h1>
+    <p>{{ name }}</p>
+    <p>{{ city }}</p>
+    <button v-on:click="doThis()">Do a thing</button>
     <hr>
-    <p>The Instrument: {{ instrument }}</p>
-    <p>Favorite Instrument: <input type="text" v-model="instrument"></p>
+    <hr>
+    <hr>
+    <p>the instrument: {{ instrument }}</p>
+    <p>Favorite instrument: <input type="text" v-model="instrument"></p>
 
-    <button v-on:click="changeName">Click me!</button>
+    <button v-on:click="changeName()">Click me!</button>
+    <hr>
     <hr>
     <hr>
     <div v-for="fruit in fruits">
-      {{ fruit }}</div>
-    <input type="text" v-model="newFruit"> <button v-on:click="addFruit"></button>Add fruit</button>
-    <hr>
-    <hr>
-    <div>
-      <p v-if="showInfo">Extra Information</p>
-      <button v-on:click="toggleInfo">Toggle Extra Info</button>
+      {{ fruit }}
     </div>
+
+    <input type="text" v-model="newFruit"> <button v-on:click="addFruit()">Add Fruit</button>
+
+
 
   </div>
 </body>
